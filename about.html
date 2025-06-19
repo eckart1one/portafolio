@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h1>Portfolio</h1>
+                </div>
+                <nav class="nav">
+                    <a href="index.html">Inicio</a>
+                    <a href="#about">Acerca de</a>
+                    <a href="contact.html">Contacto</a>
+                </nav>
+                <button class="btn btn-outline" onclick="window.location.href='contact.html'">Contactar</button>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" onclick="toggleMobileMenu()">Inicio</a>
+        <a href="#about" onclick="toggleMobileMenu()">Acerca de</a>
+        <a href="contact.html" onclick="toggleMobileMenu()">Contacto</a>
+    </div>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Hola, soy <span class="gradient-text">Desarrollador</span></h2>
+                    <p class="about-description">
+                        Soy un desarrollador full-stack apasionado por crear soluciones digitales innovadoras. 
+                        Con más de 3 años de experiencia, me especializo en transformar ideas complejas en 
+                        aplicaciones web y móviles elegantes y funcionales.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Proyectos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Años</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">8</span>
+                            <span class="stat-label">Tecnologías</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="container">
+            <h3>Habilidades Técnicas</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4><i class="fas fa-code"></i> Frontend</h4>
+                    <div class="skills">
+                        <div class="skill">
+                            <span>HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Vue.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4><i class="fas fa-server"></i> Backend</h4>
+                    <div class="skills">
+                        <div class="skill">
+                            <span>Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Express.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>FastAPI</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4><i class="fas fa-database"></i> Base de Datos</h4>
+                    <div class="skills">
+                        <div class="skill">
+                            <span>PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Redis</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4><i class="fas fa-tools"></i> Herramientas</h4>
+                    <div class="skills">
+                        <div class="skill">
+                            <span>Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="experience-section">
+        <div class="container">
+            <h3>Experiencia</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - Presente</div>
+                    <div class="timeline-content">
+                        <h4>Desarrollador Full-Stack Senior</h4>
+                        <p class="company">Tech Solutions Inc.</p>
+                        <p>Liderazgo de equipo de desarrollo, arquitectura de aplicaciones escalables y mentoring de desarrolladores junior.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 2023</div>
+                    <div class="timeline-content">
+                        <h4>Desarrollador Frontend</h4>
+                        <p class="company">Digital Agency Pro</p>
+                        <p>Desarrollo de interfaces de usuario modernas y responsivas para clientes corporativos usando React y Vue.js.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - 2022</div>
+                    <div class="timeline-content">
+                        <h4>Desarrollador Junior</h4>
+                        <p class="company">StartUp Innovate</p>
+                        <p>Desarrollo de aplicaciones web y móviles, colaboración en proyectos de inteligencia artificial y machine learning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Portfolio</h3>
+                </div>
+                <p>Transformando ideas en soluciones digitales innovadoras</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

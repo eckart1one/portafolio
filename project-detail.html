@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Proyecto - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h1>Portfolio</h1>
+                </div>
+                <nav class="nav">
+                    <a href="index.html">Inicio</a>
+                    <a href="about.html">Acerca de</a>
+                    <a href="contact.html">Contacto</a>
+                </nav>
+                <button class="btn btn-outline" onclick="window.location.href='index.html'">
+                    <i class="fas fa-arrow-left"></i> Volver
+                </button>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" onclick="toggleMobileMenu()">Inicio</a>
+        <a href="about.html" onclick="toggleMobileMenu()">Acerca de</a>
+        <a href="contact.html" onclick="toggleMobileMenu()">Contacto</a>
+    </div>
+
+    <!-- Project Detail -->
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-header" id="projectHeader">
+                <!-- Contenido cargado dinámicamente -->
+            </div>
+            
+            <div class="project-content">
+                <div class="project-main">
+                    <div class="project-gallery" id="projectGallery">
+                        <!-- Galería cargada dinámicamente -->
+                    </div>
+                    
+                    <div class="project-description" id="projectDescription">
+                        <!-- Descripción cargada dinámicamente -->
+                    </div>
+                </div>
+                
+                <div class="project-sidebar">
+                    <div class="project-info" id="projectInfo">
+                        <!-- Info cargada dinámicamente -->
+                    </div>
+                    
+                    <div class="project-actions">
+                        <button class="btn btn-primary" onclick="openDemo()">
+                            <i class="fas fa-external-link-alt"></i> Ver Demo
+                        </button>
+                        <button class="btn btn-outline" onclick="openGithub()">
+                            <i class="fab fa-github"></i> Ver Código
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Projects -->
+    <section class="related-projects">
+        <div class="container">
+            <h3>Proyectos Relacionados</h3>
+            <div class="projects-grid" id="relatedProjects">
+                <!-- Proyectos relacionados cargados dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Portfolio</h3>
+                </div>
+                <p>Transformando ideas en soluciones digitales innovadoras</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Cargar detalles del proyecto al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProjectDetail();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h1>Portfolio</h1>
+                </div>
+                <nav class="nav">
+                    <a href="index.html">Inicio</a>
+                    <a href="about.html">Acerca de</a>
+                    <a href="#contact">Contacto</a>
+                </nav>
+                <button class="btn btn-outline" onclick="window.location.href='index.html'">
+                    <i class="fas fa-arrow-left"></i> Volver
+                </button>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" onclick="toggleMobileMenu()">Inicio</a>
+        <a href="about.html" onclick="toggleMobileMenu()">Acerca de</a>
+        <a href="#contact" onclick="toggleMobileMenu()">Contacto</a>
+    </div>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h2>¡Trabajemos <span class="gradient-text">Juntos</span>!</h2>
+            <p>¿Tienes un proyecto en mente? Me encantaría escuchar tus ideas y ayudarte a hacerlas realidad.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>contacto@portfolio.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Teléfono</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Ubicación</h4>
+                                <p>Ciudad, País</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Horario</h4>
+                                <p>Lun - Vie: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-contact">
+                        <h4>Sígueme en redes</h4>
+                        <div class="social-buttons">
+                            <a href="#" class="social-btn github">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="social-btn linkedin">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-btn twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3>Envíame un mensaje</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="proyecto">Nuevo Proyecto</option>
+                                <option value="colaboracion">Colaboración</option>
+                                <option value="consulta">Consulta General</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Presupuesto estimado</label>
+                            <select id="budget" name="budget">
+                                <option value="">Selecciona un rango</option>
+                                <option value="1000-5000">$1,000 - $5,000</option>
+                                <option value="5000-10000">$5,000 - $10,000</option>
+                                <option value="10000-25000">$10,000 - $25,000</option>
+                                <option value="25000+">$25,000+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h3>Preguntas Frecuentes</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>¿Cuánto tiempo toma un proyecto?</h4>
+                    <p>El tiempo varía según la complejidad, pero típicamente entre 2-8 semanas para proyectos web completos.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Trabajas con clientes internacionales?</h4>
+                    <p>Sí, trabajo con clientes de todo el mundo. Tengo experiencia en proyectos remotos y comunicación en múltiples zonas horarias.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Ofreces mantenimiento post-lanzamiento?</h4>
+                    <p>Absolutamente. Ofrezco paquetes de mantenimiento y soporte continuo para asegurar que tu proyecto funcione perfectamente.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Qué incluye tu proceso de desarrollo?</h4>
+                    <p>Incluye consulta inicial, diseño, desarrollo, testing, lanzamiento y soporte. Te mantengo informado en cada etapa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Portfolio</h3>
+                </div>
+                <p>Transformando ideas en soluciones digitales innovadoras</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Manejar envío del formulario
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            handleFormSubmit();
+        });
+    </script>
+</body>
+</html>
