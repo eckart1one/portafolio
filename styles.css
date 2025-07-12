@@ -6,6 +6,8 @@
 }
 
 :root {
+    --primary-blue: #3c64ea;
+    --primary-black: #000;
     --primary-purple: #9333ea;
     --primary-pink: #ec4899;
     --gray-50: #f8fafc;
@@ -145,7 +147,7 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-purple), var(--primary-pink));
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-black));
     color: white;
 }
 
@@ -179,7 +181,7 @@ body {
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, var(--primary-purple), var(--primary-pink));
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-black));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
