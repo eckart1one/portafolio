@@ -2,15 +2,14 @@
 const projectsData = [
     {
         id: 1,
-        title: "E-commerce Platform",
-        description: "Plataforma completa de comercio electrónico con carrito de compras, pagos y gestión de inventario.",
+        title: "BiBugo",
+        description: "ERP a medida, una solucion tecnologia adaptada al proceso que ya se maneja.",
         image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop",
-        technologies: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+        technologies: ["Laravel", "PHP", "LiveWire", "eCharts"],
         category: "Web App",
         icon: "fas fa-globe",
         status: "Completado",
-        demoUrl: "https://demo-ecommerce.com",
-        githubUrl: "https://github.com/usuario/ecommerce",
+        demoUrl: "https://birdev.com/bibugo/public/login",
         fullDescription: `
             <h3>Descripción Completa</h3>
             <p>Esta plataforma de e-commerce fue desarrollada para una empresa retail que necesitaba una solución completa para vender sus productos online. El proyecto incluye:</p>
@@ -32,9 +31,9 @@ const projectsData = [
             "Responsive design",
             "SEO optimizado"
         ],
-        duration: "8 semanas",
-        client: "Retail Solutions Inc.",
-        year: "2023"
+        duration: "6 semanas",
+        client: "BiBugo",
+        year: "2024"
     },
     {
         id: 2,
